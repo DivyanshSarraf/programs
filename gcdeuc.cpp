@@ -14,23 +14,13 @@ int main(){
     cout<<gcd(a,b);
     
 }
-// int  gcd(int a,int b)
-// {
-//     int c;
-//     do
-//     {
-//         c=a%b;
-//         a=b;
-//         b=c;
-//     }while(c!=0);
-//     return a;
-// }
-// int gcd(int a,int b)
-// {
-//     if (b==0)
-//         return a;
-//     else
-//     {
-//         return gcd(b,a%b);
-//     }
-// }
+
+int gcd(int a,int b)
+{
+    if (b==0)
+        return a;
+    else
+    {
+        return gcd(b,a%b);
+    }
+}
